@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Profile | MelSave</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+    <div id="header"></div>
+    <div class="theme-switch">
+
+<button id="themeToggle">
+🌙
+</button>
+
+</div>
+
+
+<div id="notification" class="notification"></div>
+
+
+<section class="profile-page">
+
+
+<h1>
+👤 My Profile
+</h1>
+
+
+<div class="profile-card">
+
+<div class="profile-image-box">
+
+    <img 
+    id="profileImage"
+    src="default-profile.png"
+    class="profile-picture"
+    >
+
+    <label for="imageUpload" class="camera-btn">
+        📷
+    </label>
+
+</div>
+
+
+<input 
+type="file"
+id="imageUpload"
+accept="image/*"
+hidden
+>
+
+
+<h2 id="profileName">
+User Name
+</h2>
+
+
+<p id="profileEmail">
+Email
+</p>
+<button id="editProfileBtn">
+✏️ Edit Profile
+</button>
+
+
+<div id="editProfileBox" class="edit-profile-box">
+
+
+<input 
+id="editName"
+placeholder="New Name"
+>
+
+
+<input 
+id="editEmail"
+placeholder="New Email"
+>
+
+
+<button id="saveProfileBtn">
+Save Changes 💜
+</button>
+
+
+</div>
+
+
+<label for="imageUpload" class="upload-btn">
+     Change Photo
+</label>
+
+<input 
+type="file"
+id="imageUpload"
+accept="image/*"
+hidden
+>
+
+
+
+<h2 id="profileName">
+User Name
+</h2>
+
+
+<p id="profileEmail">
+Email
+</p>
+
+
+
+<button id="logoutBtn">
+🚪 Logout
+</button>
+
+
+<div id="logoutModal" class="logout-modal">
+
+    <div class="logout-box">
+
+        <h3>
+            Logout?
+        </h3>
+
+        <p>
+            Are you sure you want to leave MelSave? 💜
+        </p>
+
+
+        <button id="cancelLogout">
+            Cancel
+        </button>
+
+
+        <button id="confirmLogout">
+            Logout
+        </button>
+
+    </div>
+
+</div>
+</div>
+</section>
+
+
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
