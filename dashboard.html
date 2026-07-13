@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | MelSave</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header"></div>
+    <div class="theme-switch">
+
+<button id="themeToggle">
+🌙
+</button>
+
+</div>  
+<nav class="app-nav">
+    <button id="themeToggle" class="theme-btn">
+🌙
+</button>
+    <h2>MelSave 💜</h2>
+    <div class="nav-links">
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+        <a href="#">
+            Savings
+        </a>
+        <a href="#">
+            Contact Us
+        </a>
+    </div>
+</nav>
+<div id="notification" class="notification"></div>
+<section class="dashboard">
+<div class="dashboard-header">
+    <h1 id="welcomeMessage">
+        Good Evening 💜
+    </h1>
+    <p>
+        Let's make smarter money moves today.
+    </p>
+</div>
+<div class="money-cards">
+    <div class="analytics-card">
+
+<h2>
+📊 Money Overview
+</h2>
+<div class="chart-card">
+
+<h2>
+📊 Spending Overview
+</h2>
+
+
+<canvas id="moneyChart"></canvas>
+
+
+</div>
+
+<div class="overview-item">
+
+<p>
+Total Income
+</p>
+
+<h3 id="totalIncome">
+₦0
+</h3>
+
+</div>
+
+
+
+<div class="overview-item">
+
+<p>
+Total Expenses
+</p>
+
+<h3 id="totalExpenses">
+₦0
+</h3>
+
+</div>
+
+
+
+<div class="overview-item">
+
+<p>
+Savings Rate
+</p>
+
+<h3 id="savingsRate">
+0%
+</h3>
+
+</div>
+
+
+</div>
+    <div class="money-card">
+        <h3>Total Balance</h3>
+        <h2 id="totalBalance">
+            ₦0.00
+        </h2>
+    </div>
+    <div class="money-card budget-card">
+        <h3> Monthly Budget</h3>
+        <h2 id="monthlyBudget">
+            ₦0
+        </h2>
+        <p>
+            Remaining:
+            <span id="remainingBudget">
+                ₦0
+            </span>
+        </p>
+        <div class="progress-container">
+            <div 
+            class="progress-bar"
+            id="budgetProgress">
+            </div>
+        </div>
+        <button id="setBudgetBtn">
+            Set Budget
+        </button>
+    </div>
+    <div class="money-card savings-card">
+        <h3> Savings Goal</h3>
+        <h2 id="savingsGoal">
+            ₦0
+        </h2>
+        <p>
+            Saved:
+            <span id="savedAmount">
+                ₦0
+            </span>
+        </p>
+        <div class="progress-container">
+            <div
+            class="progress-bar"
+            id="savingsProgress">
+            </div>
+        </div>
+        <button id="setSavingsBtn">
+            Set Goal
+        </button>
+    </div>
+</div>
+<div class="money-actions">
+    <button class="income-btn" id="addIncomeBtn">
+        + Add Income
+    </button>
+    <button class="expense-btn" id="addExpenseBtn">
+        - Add Expense
+    </button>
+</div>
+<div class="transaction-box">
+    <h2>
+        Recent Transactions
+    </h2>
+    <ul id="transactionList">
+    </ul>
+</div>
+</section>
+<nav class="bottom-nav">
+    <a href="dashboard.html">
+        <span>
+            Home
+        </span>
+
+    </a>
+    <a href="#">
+        <span>
+            Money
+        </span>
+    </a>
+    <a href="#">
+        <span>
+            Goals
+        </span>
+    </a>
+    <a href="profile.html">
+
+    👤
+
+    <span>
+        Profile
+    </span>
+
+</a>
+    </a>
+</nav>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
