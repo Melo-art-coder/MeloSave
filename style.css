@@ -728,3 +728,72 @@ flex-direction:column;
 
 
   }
+/* SIGNUP PAGE */
+
+.signup-page{
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#f8f5ff;
+    padding:20px;
+}
+
+.signup-box{
+    background:white;
+    width:100%;
+    max-width:420px;
+    padding:40px;
+    border-radius:20px;
+    box-shadow:0 10px 30px rgba(0,0,0,.1);
+    text-align:center;
+}
+
+.signup-box h1{
+    color:#6C3EF4;
+    margin-bottom:10px;
+}
+
+.signup-box p{
+    color:#666;
+    margin-bottom:20px;
+}
+
+#signupForm{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+#signupForm input{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:12px;
+    font-size:16px;
+    font-family:'Poppins',sans-serif;
+}
+
+#signupForm button{
+    padding:15px;
+    background:#6C3EF4;
+    color:white;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    cursor:pointer;
+    transition:.3s;
+}
+
+#signupForm button:hover{
+    background:#5a31d4;
+}
+
+.login-link{
+    margin-top:20px;
+}
+
+.login-link a{
+    color:#6C3EF4;
+    text-decoration:none;
+    font-weight:600;
+}
